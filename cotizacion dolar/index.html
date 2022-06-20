@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>El dolar hoy</title>
+  </head>
+  <body>
+   <div class="container py-5 text-center">
+      <h1>Dolar Hoy en Argentina</h1>
+    </div>
+
+    <div class="cajas container py-1 text-center">
+      <div class="row card shadow mb-5 bg-body rounded" style="width: 25%; height: auto; margin: 15px;">
+        <div class="card-header text-center bg-info text-white"> DÓLAR OFICIAL </div>
+        <div class="card-body text-center">
+          <h5 class="card-subtitle text-center" id="variaOf"></h5> 
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-sm-6">
+              <p style="font-size: 14px;">Compra</p>
+            </div>
+            <div class="col-6 col-sm-6">
+              <p style="font-size: 14px;">Venta</p>
+            </div>
+        
+            <div class="w-100"></div>
+        
+            <div class="col-6 col-sm-6">
+              <h3 id="Coficial"></h3>
+            </div>
+            <div class="col-6 col-sm-6">
+              <h3 id="Voficial"></h3>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer text-muted">
+          <p id="act1"></p>
+        </div>
+      </div>
+
+      <div class="row card shadow mb-5 bg-body rounded" style="width: 25%; height: auto; margin: 15px;">
+        <div class="card-header text-center bg-info text-white"> DÓLAR BLUE </div>
+        <div class="card-body text-center">
+          <h5 class="card-subtitle text-center" id="variaBlu"></h5> 
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-sm-6">
+              <p style="font-size: 14px;">Compra</p>
+            </div>
+            <div class="col-6 col-sm-6">
+              <p style="font-size: 14px;">Venta</p>
+            </div>
+        
+            <div class="w-100"></div>
+        
+            <div class="col-6 col-sm-6">
+              <h3 id="Cblu"></h3>
+            </div>
+            <div class="col-6 col-sm-6">
+              <h3 id="Vblu"></h3>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer text-muted">
+          <p id="act2"></p>
+        </div>
+      </div>
+
+      <div class="row card shadow mb-5 bg-body rounded" style="width: 25%; height: auto; margin: 15px;">
+        <div class="card-header text-center bg-info text-white"> DÓLAR CON LIQUID </div>
+        <div class="card-body text-center">
+          <h5 class="card-subtitle text-center" id="variaLiq"></h5> 
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-sm-6">
+              <p style="font-size: 14px;">Compra</p>
+            </div>
+            <div class="col-6 col-sm-6">
+              <p style="font-size: 14px;">Venta</p>
+            </div>
+        
+            <div class="w-100"></div>
+        
+            <div class="col-6 col-sm-6">
+              <h3 id="Cliq"></h3>
+            </div>
+            <div class="col-6 col-sm-6">
+              <h3 id="Vliq"></h3>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer text-muted">
+          <p id="act3"></p>
+        </div>
+      </div>
+
+      <div class="row card shadow mb-5 bg-body rounded" style="width: 25%; height: auto; margin: 15px;">
+        <div class="card-header text-center bg-info text-white"> DÓLAR PROMEDIO </div>
+        <div class="card-body text-center">
+          <h5 class="card-subtitle text-center" id="variaPro"></h5> 
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-sm-6">
+              <p style="font-size: 14px;">Compra</p>
+            </div>
+            <div class="col-6 col-sm-6">
+              <p style="font-size: 14px;">Venta</p>
+            </div>
+        
+            <div class="w-100"></div>
+        
+            <div class="col-6 col-sm-6">
+              <h3 id="Cpro"></h3>
+            </div>
+            <div class="col-6 col-sm-6">
+              <h3 id="Vpro"></h3>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer text-muted">
+          <p id="act4"></p>
+        </div>
+      </div>
+
+      <div class="row card shadow mb-5 bg-body rounded" style="width: 25%; height: auto; margin: 15px;">
+        <div class="card-header text-center bg-info text-white"> DÓLAR BOLSA </div>
+        <div class="card-body text-center">
+          <h5 class="card-subtitle text-center" id="variaBol"></h5> 
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-sm-6">
+              <p style="font-size: 14px;">Compra</p>
+            </div>
+            <div class="col-6 col-sm-6">
+              <p style="font-size: 14px;">Venta</p>
+            </div>
+        
+            <div class="w-100"></div>
+        
+            <div class="col-6 col-sm-6">
+              <h5 id="Cbol"></h5>
+            </div>
+            <div class="col-6 col-sm-6">
+              <h5 id="Vbol"></h5>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer text-muted">
+          <p id="act5"></p>
+        </div>
+      </div>
+
+      <div class="row card shadow mb-5 bg-body rounded" style="width: 25%; height: auto; margin: 15px;">
+        <div class="card-header text-center bg-info text-white"> DÓLAR TURISTA </div>
+        <div class="card-body text-center">
+          <h5 class="card-subtitle text-center" id="variaTur"></h5> 
+        </div>
+        <div class="container text-center">
+          <div class="row">
+            
+            <div class="col">
+              <p style="font-size: 14px;">Venta</p>
+            </div>
+        
+            <div class="w-100"></div>
+
+            <div class="col">
+              <h3 id="Vtur"></h3>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer text-muted">
+          <p id="act6"></p>
+        </div>
+      </div>
+
+    <script src="index.js"></script>
+
+  </body>
+</html>
